@@ -3,10 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="index.css" rel="stylesheet" />
+    <title>Sign-up form</title>
+    <link href="/css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello!</h1>
+    <div class="body-container">
+      <div class="image-container">
+        <div class="image-text">
+          <img
+            class="logo"
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            title="odin-logo"
+            alt="ODIN"
+          />ODIN
+        </div>
+        <p class="photo-ref">
+          photo by <span class="line">Halie West</span> on <span class="line">unsplash</span>
+        </p>
+      </div>
+
+      <div class="form-container">
+        <div class="form-content">
+          <p class="text1">
+            This is not a real online service! You know you need something like this in your life to
+            help you realize your deepest dreams.<br />Sign up now to get started.
+          </p>
+          <p class="text2">You know you want to.</p>
+        </div>
+        <div class="form-body">
+          <form>
+            <p class="form-header">Let's do this!</p>
+            <div class="form-body">
+              <div class="form-lists">
+                <div class="forms left">
+                  <label class="label" for="first-name"
+                    >FIRST NAME<input
+                      class="input"
+                      id="first-name"
+                      name="first-name"
+                      type="text"
+                      required
+                      placeholder="enter your first-name"
+                    />
+                  </label>
+
+                  <label class="label" for="email"
+                    >EMAIL<input
+                      class="input"
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="enter your Email"
+                    />
+                  </label>
+
+                  <label class="label" for="password"
+                    >PASSWORD<input
+                      class="input"
+                      id="password"
+                      name="password"
+                      type="password"
+                      required
+                      placeholder="********"
+                    />
+                  </label>
+                </div>
+                <div class="rightside">
+                  <label class="label" for="last-name"
+                    >LAST NAME<input
+                      class="input"
+                      id="last-name"
+                      name="last-name"
+                      type="text"
+                      required
+                      placeholder="surname"
+                    />
+                  </label>
+
+                  <label class="label" for="phone-number"
+                    >PHONE NUMBER<input
+                      class="input"
+                      id="phone-number"
+                      name="phone-number"
+                      type="tel"
+                      required
+                      placeholder="+234 000 000 0000"
+                    />
+                  </label>
+
+                  <label class="label" for="confirm-password"
+                    >CONFIRM PASSWORD<input
+                      class="input"
+                      id="confirm-password"
+                      name="confirm-password"
+                      type="password"
+                      required
+                      placeholder="********"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="create-account">
+          <button class="button" type="submit">Create Account</button>
+          <p class="link-text">
+            Already have an account?<a class="link" href="#" title="link" target="_blank">log in</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
